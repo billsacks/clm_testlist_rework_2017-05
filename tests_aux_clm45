@@ -1,6 +1,12 @@
 # testlist is /Users/sacks/cesm_code/clm_compsetchanges/components/clm/cime_config/testdefs/testlist_clm.xml 
-# Test list created 27May2017-223919 with the following options: 
+# Test list created 27May2017-235447 with the following options: 
 # -category  aux_clm45 
+ERP_P15x2_D_Ld5.f10_f10.I1850Clm45Bgc.yellowstone_gnu.clm-default # include a debug test of I1850Clm45Bgc
+ERP_P36x2_D_Ld5.f10_f10.I1850Clm45BgcCrop.cheyenne_intel.clm-crop # include a debug test of I1850Clm45BgcCrop
+SMS_D_Ld5.f10_f10.I1850Clm45BgcCrop.hobart_nag.clm-crop # include a nag debug test of Clm45BgcCrop
+SMS_Ld5.f10_f10.I1850Clm45BgcCrop.yellowstone_gnu.clm-crop # include a production gnu test of Clm45
+ERP_P36x2_D_Ld5.f10_f10.I1850Clm45BgcCru.cheyenne_intel.clm-default # include a debug test of I1850Clm45BgcCru
+ERP_P15x2_D_Ld5.f10_f10.I1850Clm45Cn.yellowstone_pgi.clm-default # include a debug test of I1850Clm45Cn
 ERI_Ld9.f09_g16.I1850Clm50Bgc.yellowstone_pgi.clm-drydepnomegan
 SMS_Lm1.f09_g16_gl4.I1850Clm50Bgc.cheyenne_intel.clm-clm50KitchenSink
 SMS_Lm1.f09_g16_gl4.I1850Clm50Bgc.yellowstone_intel.clm-clm50KitchenSink
@@ -85,13 +91,13 @@ ERS_D_Mmpi-serial_Ld5.5x5_amazon.I2000Clm45FatesGs.yellowstone_intel.clm-fates
 SMS_D_Mmpi-serial_Ld5.5x5_amazon.I2000Clm45FatesGs.cheyenne_intel.clm-fates
 SMS_D_Mmpi-serial_Ld5.5x5_amazon.I2000Clm45FatesGs.hobart_nag.clm-fates
 SMS_D_Mmpi-serial_Ld5.5x5_amazon.I2000Clm45FatesGs.yellowstone_intel.clm-fates
+ERP_P15x2_D_Ld5.f10_f10.I2000Clm45Sp.yellowstone_pgi.clm-default # include a debug test of I2000Clm45Sp
 ERP_D_Ld5.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-allActive
 ERP_D_Ld5.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-allActive
 ERP_D_P15x2_Ld3.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-cropColdStart
 ERP_D_P15x2_Ld3.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-cropColdStart
 ERP_D_P15x2_Ld5.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_spunup # Want ERP _D test with irrigation on
 ERP_D_P15x2_Ld5.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_spunup # Want ERP _D test with irrigation on
-ERP_D_P15x2_Ld5.f10_f10.I2000Clm50BgcCropRtm.cheyenne_intel.clm-irrig_spunup # Include an irrigation test with RTM to test irrigation-river feedbacks with that component
 ERP_Ly3.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
 ERP_Ly3.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
 ERP_P15x2_Lm36.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput
@@ -119,6 +125,7 @@ SMS_Ly3_Mmpi-serial.1x1_numaIA.I2000Clm50BgcCropGs.cheyenne_intel.clm-clm50dynro
 SMS_Ly3_Mmpi-serial.1x1_numaIA.I2000Clm50BgcCropGs.yellowstone_intel.clm-clm50dynroots
 ERP_Lm20_Mmpi-serial.1x1_smallvilleIA.I2000Clm50BgcCropGs.yellowstone_pgi.clm-monthly # tests mid-year restart, with the restart file being written in the middle of the first year
 LII_D.f10_f10.I2000Clm50BgcCropGs.yellowstone_gnu.clm-cropf10IC # include one interpolation test involving crop (for now we also want one without glc_mec, although we could drop the requirement of having a non-glc_mec LII test if/when we switch to always using glc_mec)
+ERP_D_P15x2_Ld5.f10_f10.I2000Clm50BgcCropRtm.cheyenne_intel.clm-irrig_spunup # Include an irrigation test with RTM to test irrigation-river feedbacks with that component
 ERI_D_Ld9.f09_g16.I2000Clm50BgcCru.cheyenne_intel.clm-default
 ERI_D_Ld9.f09_g16.I2000Clm50BgcCru.yellowstone_intel.clm-default
 ERI_D_Ld9.f09_g16.I2000Clm50BgcCru.yellowstone_pgi.clm-default
@@ -204,12 +211,12 @@ ERP_P180x2_D_Ld5.f19_g16.I2000Clm50BgcDvCrop.yellowstone_pgi.clm-crop
 ERP_Ly20_Mmpi-serial.1x1_numaIA.I2000Clm50BgcDvCropGs.cheyenne_intel.clm-cropMonthOutput
 ERP_Ly20_Mmpi-serial.1x1_numaIA.I2000Clm50BgcDvCropGs.yellowstone_intel.clm-cropMonthOutput
 SMS_Ly3_Mmpi-serial.1x1_numaIA.I2000Clm50BgcDvCropGs.yellowstone_gnu.clm-cropMonthOutput
-ERP_P15x2_D_Ld5.f10_f10.I2000Clm50Cn.yellowstone_pgi.clm-default # Include a few debug tests of Cn
 ERP_P15x2_D_Ld5.f10_f10.I2000Clm50Cn.cheyenne_intel.clm-default # Include a few debug tests of Cn
+ERP_P15x2_D_Ld5.f10_f10.I2000Clm50Cn.yellowstone_pgi.clm-default # Include a few debug tests of Cn
 SMS_P24x1_D_Ld5.f10_f10.I2000Clm50Cn.hobart_nag.clm-default # Include a few debug tests of Cn
+ERP_D_Ld9.f19_g16.I2000Clm50Cn.yellowstone_pgi.clm-drydepnomegan
 SMS.f19_g16.I2000Clm50Cn.cheyenne_intel.clm-default # Include at least one production test with Cn
 SMS.f19_g16.I2000Clm50Cn.yellowstone_gnu.clm-default # Include at least one production test with Cn
-ERP_D_Ld9.f19_g16.I2000Clm50Cn.yellowstone_pgi.clm-drydepnomegan
 ERS_D_Ld5.f09_g16.I2000Clm50Fates.cheyenne_intel.clm-fates
 ERS_D_Ld5.f09_g16.I2000Clm50Fates.yellowstone_intel.clm-fates
 ERS_D_Ld5.f10_f10.I2000Clm50Fates.cheyenne_intel.clm-fates
@@ -263,6 +270,7 @@ SMS_Ld1_Mmpi-serial.f45_f45.I2000Clm50SpGs.yellowstone_intel.clm-ptsRLA
 SMS_Ld1_Mmpi-serial.f45_f45.I2000Clm50SpGs.yellowstone_pgi.clm-ptsRLB
 SMS_Ld1_Mmpi-serial.f45_f45.I2000Clm50SpGs.yellowstone_pgi.clm-ptsROA
 SMS_Ld1_Mmpi-serial.f45_f45.I2000Clm50SpGs.yellowstone_pgi.clm-ptsRLA
+ERP_P180x2_D.f19_g16.I2000Clm50SpRtmFl.yellowstone_pgi.clm-default # include a debug test with flooding on
 ERP_D_Ld5.f09_g16.I2000Clm50Vic.cheyenne_intel.clm-vrtlay
 ERP_D_Ld5.f09_g16.I2000Clm50Vic.yellowstone_intel.clm-vrtlay
 ERP_Ld5.f09_g16.I2000Clm50Vic.yellowstone_pgi.clm-vrtlay
@@ -271,6 +279,8 @@ ERP_D_Ld5.f10_f10.I2000Clm50Vic.yellowstone_intel.clm-vrtlay
 ERP_Ld5.f10_f10.I2000Clm50Vic.yellowstone_pgi.clm-decStart
 SMS_Ld1.f19_g16.I2000Clm50Vic.cheyenne_intel.clm-default
 SMS_Ld1.f19_g16.I2000Clm50Vic.yellowstone_intel.clm-default
+ERP_P15x2_D_Ld5.f10_f10.IHistClm45Bgc.yellowstone_pgi.clm-decStart # include a debug test of IHistClm45Bgc
+ERS_Ly5_P72x1.f10_f10.IHistClm45BgcCrop.cheyenne_intel.clm-cropMonthOutput # include a long Clm45 test, and include a production intel test of Clm45
 SMS_D_Ly6_Mmpi-serial.1x1_smallvilleIA.IHistClm45BgcCropGs.yellowstone_pgi.clm-cropMonthOutput # Want a debug test that tests a number of aspects of transient crops, including a new crop landunit and shifting PCT_CFT; move to CLM50 once we can get it fast enough (see bug 2391)
 ERP_D.f10_f10.IHistClm50Bgc.yellowstone_gnu.clm-decStart
 ERP_D.f10_f10.IHistClm50Bgc.yellowstone_pgi.clm-decStart
@@ -283,12 +293,12 @@ ERP_P15x2_Lm13.f10_f10.IHistClm50Bgc.yellowstone_pgi.clm-monthly
 SMS_Ld5_D_P24x1.f10_f10.IHistClm50Bgc.hobart_nag.clm-monthly
 ERS_Ly5_P60x1.f10_f10.IHistClm50BgcCrop.cheyenne_intel.clm-cropMonthOutput # Want a multi-year global test of transient crops; also want a multi-year transient restart test. Using P60x1 and ERS rather than ERP to get faster turnaround of this long-running test
 ERS_Ly5_P60x1.f10_f10.IHistClm50BgcCrop.yellowstone_intel.clm-cropMonthOutput # Want a multi-year global test of transient crops; also want a multi-year transient restart test. Using P60x1 and ERS rather than ERP to get faster turnaround of this long-running test
-ERP_Ly3_P72x2.f10_f10.IHistClm50BgcCropG.cheyenne_intel.clm-cropMonthOutput # Multi-year global test of transient crops together with transient glaciers.
 SMS_Ld5_D_P24x1.f10_f10.IHistClm50BgcCrop.hobart_nag.clm-decStart
 ERP_D_Ld5.f19_g16.IHistClm50BgcCrop.yellowstone_pgi.clm-drydepnomegan
 SMS_Ld5.f19_g16.IHistClm50BgcCrop.cheyenne_intel.clm-decStart
 SMS_Ld5.f19_g16.IHistClm50BgcCrop.yellowstone_intel.clm-decStart
 SMS_Ld5.f19_g16.IHistClm50BgcCrop.yellowstone_pgi.clm-decStart
+ERP_Ly3_P72x2.f10_f10.IHistClm50BgcCropG.cheyenne_intel.clm-cropMonthOutput # Multi-year global test of transient crops together with transient glaciers.
 ERS_D_Ld7_Mmpi-serial.1x1_smallvilleIA.IHistClm50BgcCropGs.cheyenne_intel.clm-decStart1851_noinitial # Transient crop run with a mid-year restart, restarting shortly after a big landunit transition, to make sure that the annually-dribbled fluxes generated from landunit transitions restart properly
 ERS_D_Ld7_Mmpi-serial.1x1_smallvilleIA.IHistClm50BgcCropGs.yellowstone_intel.clm-decStart1851_noinitial # Transient crop run with a mid-year restart, restarting shortly after a big landunit transition, to make sure that the annually-dribbled fluxes generated from landunit transitions restart properly
 ERS_Ly3_Mmpi-serial.1x1_smallvilleIA.IHistClm50BgcCropGs.yellowstone_gnu.clm-cropMonthOutput # restart is right before the transition from 100% nat veg to 100% crop
@@ -301,13 +311,3 @@ SMS_Ly5_Mmpi-serial.1x1_tropicAtl.IHistClm50BgcGs.yellowstone_intel.clm-tropicAt
 SMS_Ly8_Mmpi-serial.1x1_tropicAtl.IHistClm50BgcGs.yellowstone_gnu.clm-tropicAtl_subsetEarly
 ERS_D_Ld10.f10_f10.IHistClm50SpG.cheyenne_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
 ERS_D_Ld10.f10_f10.IHistClm50SpG.yellowstone_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
-ERP_P180x2_D.f19_g16.I2000Clm50SpRtmFl.yellowstone_pgi.clm-default  # include a debug test with flooding on
-ERP_P36x2_D_Ld5.f10_f10.I1850Clm45BgcCrop.cheyenne_intel.clm-crop  # include a debug test of I1850Clm45BgcCrop
-ERP_P15x2_D_Ld5.f10_f10.I1850Clm45Cn.yellowstone_pgi.clm-default  # include a debug test of I1850Clm45Cn
-ERP_P15x2_D_Ld5.f10_f10.I1850Clm45Bgc.yellowstone_gnu.clm-default # include a debug test of I1850Clm45Bgc
-ERP_P36x2_D_Ld5.f10_f10.I1850Clm45BgcCru.cheyenne_intel.clm-default # include a debug test of I1850Clm45BgcCru
-ERP_P15x2_D_Ld5.f10_f10.I2000Clm45Sp.yellowstone_pgi.clm-default # include a debug test of I2000Clm45Sp
-SMS_Ld5.f10_f10.I1850Clm45BgcCrop.yellowstone_gnu.clm-crop # include a production gnu test of Clm45
-SMS_D_Ld5.f10_f10.I1850Clm45BgcCrop.hobart_nag.clm-crop # include a nag debug test of Clm45BgcCrop
-ERS_Ly5_P72x1.f10_f10.IHistClm45BgcCrop.cheyenne_intel.clm-cropMonthOutput # include a long Clm45 test, and include a production intel test of Clm45
-ERP_P15x2_D_Ld5.f10_f10.IHistClm45Bgc.yellowstone_pgi.clm-decStart # include a debug test of IHistClm45Bgc
