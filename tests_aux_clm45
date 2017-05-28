@@ -266,7 +266,7 @@ SMS.f10_f10.I2000Clm50BgcCrop.hobart_pgi.clm-crop
 SMS_D.f10_f10.I2000Clm50BgcCrop.hobart_intel.clm-crop
 SMS_D.f10_f10.I2000Clm50BgcCrop.hobart_pgi.clm-crop
 SMS_D_P24x1_Ld5.f10_f10.I2000Clm50BgcCrop.hobart_nag.clm-irrig_spunup # Want nag _D test with irrigation on
-ERP.f19_g16_gl4.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_spunup_1way
+ERP.f19_g16.I1850Clm50Sp.yellowstone_pgi
 LII_D_Ld3.f19_g16_gl4.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_spunup_1way # include one interpolation test involving glc_mec (we can stop using the spunup testmod once glc_mec cases point to out-of-the-box initial conditions)
 LII_D_Ld3.f19_g16_gl4.I1850Clm50SpG.yellowstone_intel.clm-glcMEC_spunup_1way # include one interpolation test involving glc_mec (we can stop using the spunup testmod once glc_mec cases point to out-of-the-box initial conditions)
 SMS_Lm37.T31_g37_gl4.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_long # Long enough test for SMB to be generated in bare land areas; add a month beyond the 3rd year to allow time for CLM to respond to CISM forcing from the 3rd year. (Note: if we had spun-up initial conditions for an IG compset, we could test this with much shorter test, if it also used the glc override options - much of the need for this long test is to allow the snow pack to spin up.)
