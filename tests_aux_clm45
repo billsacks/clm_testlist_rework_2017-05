@@ -283,6 +283,7 @@ ERP_P15x2_Lm13.f10_f10.IHistClm50Bgc.yellowstone_pgi.clm-monthly
 SMS_Ld5_D_P24x1.f10_f10.IHistClm50Bgc.hobart_nag.clm-monthly
 ERS_Ly5_P60x1.f10_f10.IHistClm50BgcCrop.cheyenne_intel.clm-cropMonthOutput # Want a multi-year global test of transient crops; also want a multi-year transient restart test. Using P60x1 and ERS rather than ERP to get faster turnaround of this long-running test
 ERS_Ly5_P60x1.f10_f10.IHistClm50BgcCrop.yellowstone_intel.clm-cropMonthOutput # Want a multi-year global test of transient crops; also want a multi-year transient restart test. Using P60x1 and ERS rather than ERP to get faster turnaround of this long-running test
+ERP_Ly3_P72x2.f10_f10.IHistClm50BgcCropG.cheyenne_intel.clm-cropMonthOutput # Multi-year global test of transient crops together with transient glaciers.
 SMS_Ld5_D_P24x1.f10_f10.IHistClm50BgcCrop.hobart_nag.clm-decStart
 ERP_D_Ld5.f19_g16.IHistClm50BgcCrop.yellowstone_pgi.clm-drydepnomegan
 SMS_Ld5.f19_g16.IHistClm50BgcCrop.cheyenne_intel.clm-decStart
