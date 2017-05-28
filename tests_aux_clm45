@@ -302,3 +302,12 @@ SMS_Ly8_Mmpi-serial.1x1_tropicAtl.IHistClm50BgcGs.yellowstone_gnu.clm-tropicAtl_
 ERS_D_Ld10.f10_f10.IHistClm50SpG.cheyenne_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
 ERS_D_Ld10.f10_f10.IHistClm50SpG.yellowstone_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
 ERP_P180x2_D.f19_g16.I2000Clm50SpRtmFl.yellowstone_pgi.clm-default  # include a debug test with flooding on
+ERP_P36x2_D_Ld5.f10_f10.I1850Clm45BgcCrop.cheyenne_intel.clm-crop  # include a debug test of I1850Clm45BgcCrop
+ERP_P15x2_D_Ld5.f10_f10.I1850Clm45Cn.yellowstone_pgi.clm-default  # include a debug test of I1850Clm45Cn
+ERP_P15x2_D_Ld5.f10_f10.I1850Clm45Bgc.yellowstone_gnu.clm-default # include a debug test of I1850Clm45Bgc
+ERP_P36x2_D_Ld5.f10_f10.I1850Clm45BgcCru.cheyenne_intel.clm-default # include a debug test of I1850Clm45BgcCru
+ERP_P15x2_D_Ld5.f10_f10.I2000Clm45Sp.yellowstone_pgi.clm-default # include a debug test of I2000Clm45Sp
+SMS_Ld5.f10_f10.I1850Clm45BgcCrop.yellowstone_gnu.clm-crop # include a production gnu test of Clm45
+SMS_D_Ld5.f10_f10.I1850Clm45BgcCrop.hobart_nag.clm-crop # include a nag debug test of Clm45BgcCrop
+ERS_Ly5_P72x1.f10_f10.IHistClm45BgcCrop.cheyenne_intel.clm-cropMonthOutput # include a long Clm45 test, and include a production intel test of Clm45
+ERP_P15x2_D_Ld5.f10_f10.IHistClm45Bgc.yellowstone_pgi.clm-decStart # include a debug test of IHistClm45Bgc
