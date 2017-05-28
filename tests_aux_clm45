@@ -266,8 +266,8 @@ SMS.f10_f10.I2000Clm50BgcCrop.hobart_pgi.clm-crop
 SMS_D.f10_f10.I2000Clm50BgcCrop.hobart_intel.clm-crop
 SMS_D.f10_f10.I2000Clm50BgcCrop.hobart_pgi.clm-crop
 SMS_D_P24x1_Ld5.f10_f10.I2000Clm50BgcCrop.hobart_nag.clm-irrig_spunup # Want nag _D test with irrigation on
-ERP.f19_g16_gl4.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_spunup_1way # include one interpolation test involving glc_mec (we can stop using the spunup testmod once glc_mec cases point to out-of-the-box initial conditions)
-LII_D_Ld3.f19_g16_gl4.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_spunup_1way
+ERP.f19_g16_gl4.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_spunup_1way
+LII_D_Ld3.f19_g16_gl4.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_spunup_1way # include one interpolation test involving glc_mec (we can stop using the spunup testmod once glc_mec cases point to out-of-the-box initial conditions)
 LII_D_Ld3.f19_g16_gl4.I1850Clm50SpG.yellowstone_intel.clm-glcMEC_spunup_1way # include one interpolation test involving glc_mec (we can stop using the spunup testmod once glc_mec cases point to out-of-the-box initial conditions)
 SMS_Lm37.T31_g37_gl4.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_long # Long enough test for SMB to be generated in bare land areas; add a month beyond the 3rd year to allow time for CLM to respond to CISM forcing from the 3rd year. (Note: if we had spun-up initial conditions for an IG compset, we could test this with much shorter test, if it also used the glc override options - much of the need for this long test is to allow the snow pack to spin up.)
 SMS_Lm37.T31_g37_gl4.I1850Clm50SpG.yellowstone_intel.clm-glcMEC_long # Long enough test for SMB to be generated in bare land areas; add a month beyond the 3rd year to allow time for CLM to respond to CISM forcing from the 3rd year. (Note: if we had spun-up initial conditions for an IG compset, we could test this with much shorter test, if it also used the glc override options - much of the need for this long test is to allow the snow pack to spin up.)
@@ -298,18 +298,18 @@ SMS_Ly5_Mmpi-serial.1x1_tropicAtl.IHistClm50BgcGs.yellowstone_intel.clm-tropicAt
 SMS_Ly8_Mmpi-serial.1x1_tropicAtl.IHistClm50BgcGs.yellowstone_gnu.clm-tropicAtl_subsetEarly
 ERP_D.f10_f10.IHistClm50Bgc.yellowstone_gnu.clm-decStart
 ERP_D.f10_f10.IHistClm50Bgc.yellowstone_pgi.clm-decStart
-ERP_D_P15x2.f10_f10.IHistClm50Bgc.cheyenne_intel.clm-ciso_decStart
+ERP_D_P15x2.f10_f10.IHistClm50Bgc.cheyenne_intel.clm-ciso_decStart # Want a transient case with isotopes, to test isotopes in the transient landuse and harvest code (ideally this would also include crop in order to test the combination of crop and isotopes, but currently you cannot combine crops and isotopes)
 ERP_D_P15x2.f10_f10.IHistClm50Bgc.yellowstone_intel.clm-ciso_decStart # Want a transient case with isotopes, to test isotopes in the transient landuse and harvest code (ideally this would also include crop in order to test the combination of crop and isotopes, but currently you cannot combine crops and isotopes)
 ERP_D_P24x1.f10_f10.IHistClm50Bgc.hobart_nag.clm-decStart
 ERP_P15x2_Lm13.f10_f10.IHistClm50Bgc.cheyenne_intel.clm-monthly
 ERP_P15x2_Lm13.f10_f10.IHistClm50Bgc.yellowstone_intel.clm-monthly
 ERP_P15x2_Lm13.f10_f10.IHistClm50Bgc.yellowstone_pgi.clm-monthly
 SMS_Ld5_D_P24x1.f10_f10.IHistClm50Bgc.hobart_nag.clm-monthly
-ERS_D_Ld7_Mmpi-serial.1x1_smallvilleIA.IHistClm50BgcCropGs.cheyenne_intel.clm-decStart1851_noinitial
+ERS_D_Ld7_Mmpi-serial.1x1_smallvilleIA.IHistClm50BgcCropGs.cheyenne_intel.clm-decStart1851_noinitial # Transient crop run with a mid-year restart, restarting shortly after a big landunit transition, to make sure that the annually-dribbled fluxes generated from landunit transitions restart properly
 ERS_D_Ld7_Mmpi-serial.1x1_smallvilleIA.IHistClm50BgcCropGs.yellowstone_intel.clm-decStart1851_noinitial # Transient crop run with a mid-year restart, restarting shortly after a big landunit transition, to make sure that the annually-dribbled fluxes generated from landunit transitions restart properly
 ERS_Ly3_Mmpi-serial.1x1_smallvilleIA.IHistClm50BgcCropGs.yellowstone_gnu.clm-cropMonthOutput # restart is right before the transition from 100% nat veg to 100% crop
 ERS_Ly6_Mmpi-serial.1x1_smallvilleIA.IHistClm50BgcCropGs.yellowstone_gnu.clm-cropMonthOutput # restart is right before increasing natural veg to > 0 while also shifting PCT_CFT
-ERS_Ly5_P60x1.f10_f10.IHistClm50BgcCrop.cheyenne_intel.clm-cropMonthOutput
+ERS_Ly5_P60x1.f10_f10.IHistClm50BgcCrop.cheyenne_intel.clm-cropMonthOutput # Want a multi-year global test of transient crops; also want a multi-year transient restart test. Using P60x1 and ERS rather than ERP to get faster turnaround of this long-running test
 ERS_Ly5_P60x1.f10_f10.IHistClm50BgcCrop.yellowstone_intel.clm-cropMonthOutput # Want a multi-year global test of transient crops; also want a multi-year transient restart test. Using P60x1 and ERS rather than ERP to get faster turnaround of this long-running test
 ERS_D_Ld5.f10_f10.I2000Clm50BgcCru.cheyenne_intel.clm-default
 ERS_D_Ld5.f10_f10.I2000Clm50BgcCru.yellowstone_intel.clm-default
