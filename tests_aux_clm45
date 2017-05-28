@@ -91,6 +91,7 @@ ERP_D_P15x2_Ld3.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-cropColdStart
 ERP_D_P15x2_Ld3.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-cropColdStart
 ERP_D_P15x2_Ld5.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_spunup # Want ERP _D test with irrigation on
 ERP_D_P15x2_Ld5.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_spunup # Want ERP _D test with irrigation on
+ERP_D_P15x2_Ld5.f10_f10.I2000Clm50BgcCropRtm.cheyenne_intel.clm-irrig_spunup # Include an irrigation test with RTM to test irrigation-river feedbacks with that component
 ERP_Ly3.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
 ERP_Ly3.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
 ERP_P15x2_Lm36.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput
