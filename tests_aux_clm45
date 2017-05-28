@@ -111,8 +111,8 @@ ERP_Ly5_Mmpi-serial.1x1_numaIA.I2000Clm50BgcCropGs.hobart_nag.clm-monthly
 ERP_Lm20_Mmpi-serial.1x1_smallvilleIA.I2000Clm50BgcCropGs.yellowstone_pgi.clm-monthly # tests mid-year restart, with the restart file being written in the middle of the first year
 ERP_D_Ld5.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-allActive
 ERP_D_Ld5.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-allActive
-ERP_Ly5.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput
-ERP_Ly5.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_o3_reduceOutput
+ERP_Ly3.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
+ERP_Ly3.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
 ERP_P15x2_D.f10_f10.I2000Clm50BgcCrop.yellowstone_gnu.clm-snowlayers_12 # Can be removed once we change the CLM5 default to have more than 5 snow layers (at which point we will be testing 5 layers with CLM45 and more than 5 with CLM5)
 ERP_P15x2_Lm36.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput
 ERP_P15x2_Lm36.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_o3_reduceOutput
