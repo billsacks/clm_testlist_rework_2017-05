@@ -97,14 +97,10 @@ ERP_D_P15x2_Ld3.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-cropColdStart
 ERP_D_P15x2_Ld3.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-cropColdStart
 ERP_D_P15x2_Ld5.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_spunup # Want ERP _D test with irrigation on
 ERP_D_P15x2_Ld5.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_spunup # Want ERP _D test with irrigation on
-ERP_Ly3.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
-ERP_Ly3.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
-ERP_P15x2_Lm36.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput
-ERP_P15x2_Lm36.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_o3_reduceOutput
-ERP_P60x2_Lm36.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-clm50cropIrrigMonth_interp
+ERP_P72x2_Ly3.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
+ERP_P60x2_Ly3.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
+ERP_P72x2_Lm36.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-clm50cropIrrigMonth_interp
 ERP_P60x2_Lm36.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-clm50cropIrrigMonth_interp
-PEM_Lm25.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-cropMonthOutput
-PEM_Lm25.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-cropMonthOutput
 SMS.f10_f10.I2000Clm50BgcCrop.hobart_intel.clm-crop
 SMS.f10_f10.I2000Clm50BgcCrop.hobart_pgi.clm-crop
 SMS_D.f10_f10.I2000Clm50BgcCrop.hobart_intel.clm-crop
@@ -134,19 +130,16 @@ ERI_Ld9.f09_g16.I2000Clm50BgcCru.yellowstone_pgi.clm-drydepnomegan
 LII_D_Ld3.f09_g16.I2000Clm50BgcCru.yellowstone_gnu.clm-defaultf09IC # Include a LII test with a year-2000 restart file, so that the restart file has non-zero product pools, so that we exercise the gridcell-level code in init_interp. This test is largely redundant with LII_D.f10_f10.I2000Clm50BgcCropGs.yellowstone_gnu.clm-cropf10IC, but at least in the past, the initial conditions file for that test had 0 product pools and O2_DECOMP_DEPTH_UNSAT = 0 everywhere. That failed to catch a problem that appears when there are non-zero values in O2_DECOMP_DEPTH_UNSAT. Once the initial conditions file for the crop LII test has non-zero values for O2_DECOMP_DEPTH_UNSAT and product pools, this non-crop LII test can be removed.
 SMS_Ld1.f09_g16.I2000Clm50BgcCru.cheyenne_intel.clm-af_bias_v5
 SMS_Ld1.f09_g16.I2000Clm50BgcCru.yellowstone_intel.clm-af_bias_v5
-ERI_D_Ld9.f10_f10.I2000Clm50BgcCru.cheyenne_intel.clm-reduceOutput
 ERI_D_Ld9.f10_f10.I2000Clm50BgcCru.cheyenne_intel.clm-default
-ERI_D_Ld9.f10_f10.I2000Clm50BgcCru.yellowstone_intel.clm-reduceOutput
 ERI_D_Ld9.f10_f10.I2000Clm50BgcCru.yellowstone_intel.clm-default
-ERI_D_Ld9.f10_f10.I2000Clm50BgcCru.yellowstone_pgi.clm-reduceOutput
+ERI_D_Ld9.f10_f10.I2000Clm50BgcCru.yellowstone_pgi.clm-default
 ERI_D_Ld9_P24x1.f10_f10.I2000Clm50BgcCru.hobart_nag.clm-reduceOutput
 ERI_Ld9.f10_f10.I2000Clm50BgcCru.cheyenne_intel.clm-drydepnomegan
-ERI_Ld9.f10_f10.I2000Clm50BgcCru.cheyenne_intel.clm-reduceOutput
+ERI_Ld9.f10_f10.I2000Clm50BgcCru.cheyenne_intel.clm-default
 ERI_Ld9.f10_f10.I2000Clm50BgcCru.yellowstone_gnu.clm-default
 ERI_Ld9.f10_f10.I2000Clm50BgcCru.yellowstone_intel.clm-drydepnomegan
-ERI_Ld9.f10_f10.I2000Clm50BgcCru.yellowstone_intel.clm-reduceOutput
-ERI_Ld9.f10_f10.I2000Clm50BgcCru.yellowstone_pgi
-ERI_Ld9.f10_f10.I2000Clm50BgcCru.yellowstone_pgi.clm-reduceOutput
+ERI_Ld9.f10_f10.I2000Clm50BgcCru.yellowstone_intel.clm-default
+ERI_Ld9.f10_f10.I2000Clm50BgcCru.yellowstone_pgi.clm-default
 ERP_D_Ld3_P15x2.f10_f10.I2000Clm50BgcCru.cheyenne_intel.clm-default
 ERP_D_Ld3_P15x2.f10_f10.I2000Clm50BgcCru.yellowstone_gnu.clm-default
 ERP_D_Ld3_P15x2.f10_f10.I2000Clm50BgcCru.yellowstone_intel.clm-default
@@ -187,8 +180,6 @@ SMS_D_Ld3.f10_f10.I2000Clm50BgcCru.cheyenne_intel.clm-default
 SMS_D_Ld3.f10_f10.I2000Clm50BgcCru.yellowstone_gnu.clm-default
 SMS_D_Ld3.f10_f10.I2000Clm50BgcCru.yellowstone_intel.clm-default
 SMS_D_Ld3.f10_f10.I2000Clm50BgcCru.yellowstone_pgi.clm-default
-ERI_D_Ld9.f19_g16.I2000Clm50BgcCru.yellowstone_gnu.clm-default
-ERI_Ld9.f19_g16.I2000Clm50BgcCru.yellowstone_pgi.clm-drydepnomegan
 ERP_D_Ld5.f19_g16.I2000Clm50BgcCru.cheyenne_intel.clm-default
 ERP_D_Ld5.f19_g16.I2000Clm50BgcCru.cheyenne_intel.clm-fire_emis
 ERP_D_Ld5.f19_g16.I2000Clm50BgcCru.yellowstone_intel.clm-default
@@ -204,8 +195,8 @@ ERI_D_Ld9.ne30_g16.I2000Clm50BgcCru.cheyenne_intel.clm-vrtlay
 ERI_D_Ld9.ne30_g16.I2000Clm50BgcCru.yellowstone_intel.clm-vrtlay
 PEM_D_Ld5.ne30_g16.I2000Clm50BgcCru.cheyenne_intel.clm-default
 PEM_D_Ld5.ne30_g16.I2000Clm50BgcCru.yellowstone_intel.clm-default
-ERP_P15x2_Lm25.f10_f10.I2000Clm50BgcDvCrop.cheyenne_intel.clm-monthly
-ERP_P15x2_Lm25.f10_f10.I2000Clm50BgcDvCrop.yellowstone_intel.clm-monthly
+ERP_P36x2_Lm25.f10_f10.I2000Clm50BgcDvCrop.cheyenne_intel.clm-monthly
+ERP_P30x2_Lm25.f10_f10.I2000Clm50BgcDvCrop.yellowstone_intel.clm-monthly
 ERP_P180x2_D_Ld5.f19_g16.I2000Clm50BgcDvCrop.yellowstone_pgi.clm-crop
 ERP_Ly20_Mmpi-serial.1x1_numaIA.I2000Clm50BgcDvCropGs.cheyenne_intel.clm-cropMonthOutput
 ERP_Ly20_Mmpi-serial.1x1_numaIA.I2000Clm50BgcDvCropGs.yellowstone_intel.clm-cropMonthOutput
