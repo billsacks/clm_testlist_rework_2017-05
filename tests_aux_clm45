@@ -299,3 +299,4 @@ SMS_Ly5_Mmpi-serial.1x1_tropicAtl.IHistClm50BgcGs.yellowstone_intel.clm-tropicAt
 SMS_Ly8_Mmpi-serial.1x1_tropicAtl.IHistClm50BgcGs.yellowstone_gnu.clm-tropicAtl_subsetEarly
 ERS_D_Ld10.f10_f10.IHistClm50SpG.cheyenne_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
 ERS_D_Ld10.f10_f10.IHistClm50SpG.yellowstone_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
+ERP_P180x2_D.f19_g16.I2000Clm50SpRtmFl.yellowstone_pgi.clm-default  # include a debug test with flooding on
