@@ -113,7 +113,6 @@ ERP_D_Ld5.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-allActive
 ERP_D_Ld5.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-allActive
 ERP_Ly3.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
 ERP_Ly3.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_o3_reduceOutput # Want a multi-year global crop restart test; this was 5 years when we were doing cold start, but 3 years is probably sufficient given that we have spun-up crop initial conditions
-ERP_P15x2_D.f10_f10.I2000Clm50BgcCrop.yellowstone_gnu.clm-snowlayers_12 # Can be removed once we change the CLM5 default to have more than 5 snow layers (at which point we will be testing 5 layers with CLM45 and more than 5 with CLM5)
 ERP_P15x2_Lm36.f10_f10.I2000Clm50BgcCrop.cheyenne_intel.clm-irrig_o3_reduceOutput
 ERP_P15x2_Lm36.f10_f10.I2000Clm50BgcCrop.yellowstone_intel.clm-irrig_o3_reduceOutput
 LII_D.f10_f10.I2000Clm50BgcCropGs.yellowstone_gnu.clm-cropf10IC # include one interpolation test involving crop (for now we also want one without glc_mec, although we could drop the requirement of having a non-glc_mec LII test if/when we switch to always using glc_mec)
