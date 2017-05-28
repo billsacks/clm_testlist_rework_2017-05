@@ -203,8 +203,12 @@ ERP_P180x2_D_Ld5.f19_g16.I2000Clm50BgcDvCrop.yellowstone_pgi.clm-crop
 ERP_Ly20_Mmpi-serial.1x1_numaIA.I2000Clm50BgcDvCropGs.cheyenne_intel.clm-cropMonthOutput
 ERP_Ly20_Mmpi-serial.1x1_numaIA.I2000Clm50BgcDvCropGs.yellowstone_intel.clm-cropMonthOutput
 SMS_Ly3_Mmpi-serial.1x1_numaIA.I2000Clm50BgcDvCropGs.yellowstone_gnu.clm-cropMonthOutput
-ERI_D_Ld9.f19_g16.I2000Clm50Cn.yellowstone_pgi
-ERI_D_Ld9.f19_g16.I2000Clm50Cn.yellowstone_pgi.clm-drydepnomegan
+ERP_P15x2_D_Ld5.f10_f10.I2000Clm50Cn.yellowstone_pgi.clm-default # Include a few debug tests of Cn
+ERP_P15x2_D_Ld5.f10_f10.I2000Clm50Cn.cheyenne_intel.clm-default # Include a few debug tests of Cn
+SMS_P24x1_D_Ld5.f10_f10.I2000Clm50Cn.hobart_nag.clm-default # Include a few debug tests of Cn
+SMS.f19_g16.I2000Clm50Cn.cheyenne_intel.clm-default # Include at least one production test with Cn
+SMS.f19_g16.I2000Clm50Cn.yellowstone_gnu.clm-default # Include at least one production test with Cn
+ERP_D_Ld9.f19_g16.I2000Clm50Cn.yellowstone_pgi.clm-drydepnomegan
 ERS_D_Ld5.f09_g16.I2000Clm50Fates.cheyenne_intel.clm-fates
 ERS_D_Ld5.f09_g16.I2000Clm50Fates.yellowstone_intel.clm-fates
 ERS_D_Ld5.f10_f10.I2000Clm50Fates.cheyenne_intel.clm-fates
