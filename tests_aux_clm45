@@ -268,10 +268,10 @@ SMS_D_P24x1_Ld5.f10_f10.I2000Clm50BgcCrop.hobart_nag.clm-irrig_spunup # Want nag
 ERP.f19_g16.I1850Clm50Sp.yellowstone_pgi
 LII_D_Ld3.f19_g16_gl4.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_spunup_1way # include one interpolation test involving glc_mec (we can stop using the spunup testmod once glc_mec cases point to out-of-the-box initial conditions)
 LII_D_Ld3.f19_g16_gl4.I1850Clm50SpG.yellowstone_intel.clm-glcMEC_spunup_1way # include one interpolation test involving glc_mec (we can stop using the spunup testmod once glc_mec cases point to out-of-the-box initial conditions)
-SMS_Lm37.T31_g37_gl4.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_long # Long enough test for SMB to be generated in bare land areas; add a month beyond the 3rd year to allow time for CLM to respond to CISM forcing from the 3rd year. (Note: if we had spun-up initial conditions for an IG compset, we could test this with much shorter test, if it also used the glc override options - much of the need for this long test is to allow the snow pack to spin up.)
-SMS_Lm37.T31_g37_gl4.I1850Clm50SpG.yellowstone_intel.clm-glcMEC_long # Long enough test for SMB to be generated in bare land areas; add a month beyond the 3rd year to allow time for CLM to respond to CISM forcing from the 3rd year. (Note: if we had spun-up initial conditions for an IG compset, we could test this with much shorter test, if it also used the glc override options - much of the need for this long test is to allow the snow pack to spin up.)
-ERS_D_Ld12.T31_g37_gl4.I1850Clm50BgcCropG.cheyenne_intel.clm-glcMEC_spunup_inc_dec_bgc # Tests updates of BGC variables with increasing and decreasing glacier areas
-ERS_D_Ld12.T31_g37_gl4.I1850Clm50BgcCropG.yellowstone_intel.clm-glcMEC_spunup_inc_dec_bgc # Tests updates of BGC variables with increasing and decreasing glacier areas
+SMS_Lm37.f10_f10.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_long # Long enough test for SMB to be generated in bare land areas; add a month beyond the 3rd year to allow time for CLM to respond to CISM forcing from the 3rd year. (Note: if we had spun-up initial conditions for an IG compset, we could test this with much shorter test, if it also used the glc override options - much of the need for this long test is to allow the snow pack to spin up.)
+SMS_Lm37.f10_f10.I1850Clm50SpG.yellowstone_intel.clm-glcMEC_long # Long enough test for SMB to be generated in bare land areas; add a month beyond the 3rd year to allow time for CLM to respond to CISM forcing from the 3rd year. (Note: if we had spun-up initial conditions for an IG compset, we could test this with much shorter test, if it also used the glc override options - much of the need for this long test is to allow the snow pack to spin up.)
+ERS_D_Ld12.f10_f10.I1850Clm50BgcCropG.cheyenne_intel.clm-glcMEC_spunup_inc_dec_bgc # Tests updates of BGC variables with increasing and decreasing glacier areas
+ERS_D_Ld12.f10_f10.I1850Clm50BgcCropG.yellowstone_intel.clm-glcMEC_spunup_inc_dec_bgc # Tests updates of BGC variables with increasing and decreasing glacier areas
 SMS_Lm1.f09_g16_gl4.I1850Clm50Bgc.cheyenne_intel.clm-clm50KitchenSink
 SMS_Lm1.f09_g16_gl4.I1850Clm50Bgc.yellowstone_intel.clm-clm50KitchenSink
 SMS_Lm1.f19_g16_gl4.I1850Clm50Bgc.cheyenne_intel.clm-clm50dynroots
@@ -282,8 +282,8 @@ ERS_D_Ld3.f19_g16_gl4.I1850Clm50BgcCrop.cheyenne_intel.clm-clm50dynroots
 ERS_D_Ld3.f19_g16_gl4.I1850Clm50BgcCrop.yellowstone_intel.clm-clm50dynroots
 ERP_D_Ld5.f19_g16_gl4.I1850Clm50BgcCropG.cheyenne_intel.clm-glcMEC_changeFlags
 ERP_D_Ld5.f19_g16_gl4.I1850Clm50BgcCropG.yellowstone_intel.clm-glcMEC_changeFlags
-ERS_D_Ld10.T31_g37_gl4.IHistClm50SpG.cheyenne_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
-ERS_D_Ld10.T31_g37_gl4.IHistClm50SpG.yellowstone_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
+ERS_D_Ld10.f10_f10.IHistClm50SpG.cheyenne_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
+ERS_D_Ld10.f10_f10.IHistClm50SpG.yellowstone_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
 ERS_D.f19_g16.I1850Clm50BgcCrop.cheyenne_intel.clm-reseedresetsnow
 ERP_P180x2_D_Ld5.f19_g16_gl4.I1850Clm50BgcCropG.yellowstone_pgi.clm-glcMEC_increase
 SMS.f19_g16_gl4.I1850Clm50BgcCropG.hobart_nag.clm-glcMEC
