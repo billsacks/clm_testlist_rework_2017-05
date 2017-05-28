@@ -41,7 +41,6 @@ ERS_D_Ld12.f10_f10.I1850Clm50BgcCropG.yellowstone_intel.clm-glcMEC_spunup_inc_de
 ERP_D_Ld5.f19_g16_gl4.I1850Clm50BgcCropG.cheyenne_intel.clm-glcMEC_changeFlags
 ERP_D_Ld5.f19_g16_gl4.I1850Clm50BgcCropG.yellowstone_intel.clm-glcMEC_changeFlags
 ERP_P180x2_D_Ld5.f19_g16_gl4.I1850Clm50BgcCropG.yellowstone_pgi.clm-glcMEC_increase
-SMS.f19_g16_gl4.I1850Clm50BgcCropG.hobart_nag.clm-glcMEC
 ERP.f19_g16.I1850Clm50Sp.yellowstone_pgi
 SMS_Lm37.f10_f10.I1850Clm50SpG.cheyenne_intel.clm-glcMEC_long # Long enough test for SMB to be generated in bare land areas; add a month beyond the 3rd year to allow time for CLM to respond to CISM forcing from the 3rd year. (Note: if we had spun-up initial conditions for an IG compset, we could test this with much shorter test, if it also used the glc override options - much of the need for this long test is to allow the snow pack to spin up.)
 SMS_Lm37.f10_f10.I1850Clm50SpG.yellowstone_intel.clm-glcMEC_long # Long enough test for SMB to be generated in bare land areas; add a month beyond the 3rd year to allow time for CLM to respond to CISM forcing from the 3rd year. (Note: if we had spun-up initial conditions for an IG compset, we could test this with much shorter test, if it also used the glc override options - much of the need for this long test is to allow the snow pack to spin up.)
