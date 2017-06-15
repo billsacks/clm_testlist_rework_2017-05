@@ -304,3 +304,5 @@ SMS_Ly8_Mmpi-serial.1x1_tropicAtl.IHistClm50BgcGs.yellowstone_gnu.clm-tropicAtl_
 ERS_D_Ld10.f10_f10_musgs.IHistClm50SpG.cheyenne_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
 ERS_D_Ld10.f10_f10_musgs.IHistClm50SpG.yellowstone_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
 LVG_Ld5_D.f10_f10.I1850Clm50Bgc.cheyenne_intel.clm-no_vector_output # Include one LVG debug test (exact configuration is not very important). Note that the LVG test will fail if there is any 1-d output, or output separated by glacier elevation classes (e.g., the various *_FORC fields), so this includes a testmod that turns off any 1-d output.
+ERS_Ly3.f10_f10.I1850Clm50BgcCrop.cheyenne_intel.clm-cmip6  # Include a long ERS test of the cmip6 configuration, though at coarse resolution
+SMS_Ld5_D.f09_g16.I1850Clm50BgcCrop.cheyenne_intel.clm-cmip6 # Include a short debug test of the cmip6 configuration at the production resolution
