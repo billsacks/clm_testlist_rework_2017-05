@@ -1,5 +1,5 @@
 # testlist is /Users/sacks/cesm_code/clm_compsetchanges/components/clm/cime_config/testdefs/testlist_clm.xml 
-# Test list created 14Jun2017-201149 with the following options: 
+# Test list created 14Jun2017-202729 with the following options: 
 # -category  aux_clm45 
 ERP_P15x2_D_Ld5.f10_f10_musgs.I1850Clm45Bgc.yellowstone_gnu.clm-default # include a debug test of I1850Clm45Bgc
 ERP_P36x2_D_Ld5.f10_f10_musgs.I1850Clm45BgcCrop.cheyenne_intel.clm-crop # include a debug test of I1850Clm45BgcCrop
@@ -10,6 +10,7 @@ ERP_P15x2_D_Ld5.f10_f10_musgs.I1850Clm45Cn.yellowstone_pgi.clm-default # include
 ERI_Ld9.f09_g17.I1850Clm50Bgc.yellowstone_pgi.clm-drydepnomegan
 SMS_Lm1.f09_g17_gl4.I1850Clm50Bgc.cheyenne_intel.clm-clm50KitchenSink
 SMS_Lm1.f09_g17_gl4.I1850Clm50Bgc.yellowstone_intel.clm-clm50KitchenSink
+LVG_Ld5_D.f10_f10.I1850Clm50Bgc.cheyenne_intel.clm-no_vector_output # Include one LVG debug test (exact configuration is not very important). Note that the LVG test will fail if there is any 1-d output, or output separated by glacier elevation classes (e.g., the various *_FORC fields), so this includes a testmod that turns off any 1-d output.
 ERI_D_Ld9.f10_f10_musgs.I1850Clm50Bgc.yellowstone_gnu.clm-default
 ERP_D_Ld5_P24x1.f10_f10_musgs.I1850Clm50Bgc.hobart_nag.clm-ciso
 ERP_Ld5.f10_f10_musgs.I1850Clm50Bgc.cheyenne_intel.clm-drydepnomegan
@@ -27,9 +28,11 @@ SSP_D_Ld10.f19_g17.I1850Clm50Bgc.yellowstone_intel.clm-rtmColdSSP
 SSP_Ld10.f19_g17.I1850Clm50Bgc.yellowstone_pgi.clm-rtmColdSSP
 SMS_Lm1.f19_g17_gl4.I1850Clm50Bgc.cheyenne_intel.clm-clm50dynroots
 SMS_Lm1.f19_g17_gl4.I1850Clm50Bgc.yellowstone_intel.clm-clm50dynroots
+SMS_Ld5_D.f09_g16.I1850Clm50BgcCrop.cheyenne_intel.clm-cmip6 # Include a short debug test of the cmip6 configuration at the production resolution
 ERS_Ld3.f09_g17.I1850Clm50BgcCrop.cheyenne_intel.clm-rad_hrly_light_res_half
 ERS_D_Ld3.f09_g17_gl4.I1850Clm50BgcCrop.cheyenne_intel.clm-clm50KitchenSink
 ERS_D_Ld3.f09_g17_gl4.I1850Clm50BgcCrop.yellowstone_intel.clm-clm50KitchenSink
+ERS_Ly3.f10_f10.I1850Clm50BgcCrop.cheyenne_intel.clm-cmip6 # Include a long ERS test of the cmip6 configuration, though at coarse resolution
 ERS_Ly3.f10_f10_musgs.I1850Clm50BgcCrop.cheyenne_intel.clm-clm50KSinkMOut
 ERS_Ly3.f10_f10_musgs.I1850Clm50BgcCrop.yellowstone_intel.clm-clm50KSinkMOut
 PET_P15x2_D.f10_f10_musgs.I1850Clm50BgcCrop.yellowstone_gnu.clm-interp_f19_noncrop # include a test of initInterp from one resolution to another; make it a PET test to exercise the OpenMP directives in initInterp
@@ -303,6 +306,3 @@ SMS_Ly5_Mmpi-serial.1x1_tropicAtl.IHistClm50BgcGs.yellowstone_intel.clm-tropicAt
 SMS_Ly8_Mmpi-serial.1x1_tropicAtl.IHistClm50BgcGs.yellowstone_gnu.clm-tropicAtl_subsetEarly
 ERS_D_Ld10.f10_f10_musgs.IHistClm50SpG.cheyenne_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
 ERS_D_Ld10.f10_f10_musgs.IHistClm50SpG.yellowstone_intel.clm-glcMEC_decrease # test transient PFTs (via HIST) in conjunction with changing glacier area
-LVG_Ld5_D.f10_f10.I1850Clm50Bgc.cheyenne_intel.clm-no_vector_output # Include one LVG debug test (exact configuration is not very important). Note that the LVG test will fail if there is any 1-d output, or output separated by glacier elevation classes (e.g., the various *_FORC fields), so this includes a testmod that turns off any 1-d output.
-ERS_Ly3.f10_f10.I1850Clm50BgcCrop.cheyenne_intel.clm-cmip6  # Include a long ERS test of the cmip6 configuration, though at coarse resolution
-SMS_Ld5_D.f09_g16.I1850Clm50BgcCrop.cheyenne_intel.clm-cmip6 # Include a short debug test of the cmip6 configuration at the production resolution
